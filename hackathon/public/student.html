@@ -1,0 +1,30 @@
+<!-- student.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Student Dashboard</h2>
+    <h3>Edit Profile</h3>
+    <form id="editProfileForm">
+        <input type="text" id="firstName" placeholder="First Name" required />
+        <input type="text" id="lastName" placeholder="Last Name" required />
+        <input type="text" id="cnic" placeholder="CNIC" required />
+        <button type="submit">Update Profile</button>
+    </form>
+
+    <h3>Check Result</h3>
+    <form id="checkResultForm">
+        <input type="text" id="cnicSearch" placeholder="Enter CNIC" required />
+        <button type="submit">Find Result</button>
+    </form>
+
+    <div id="resultDisplay"></div>
+
+    <script type="module" src="student.js"></script>
+</body>
+</html>
